@@ -1,0 +1,63 @@
+main, nav, header, article, section, footer{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.nagykep>img, .kep img{
+    width: 100%;
+}
+
+.kiskep{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+nav ul{
+    padding-top: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#kezdo{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: red;
+    width: 85px;
+}
+
+#vonal li{
+    border-left: 1px solid black;
+}
+
+nav{
+    background-color: rgb(160, 160, 160);
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 75% auto;
+}
+
+@media screen and (max-width:800px){
+    .kiskep{
+        grid-template-columns: 1fr;
+    }
+    
+    nav ul{
+        grid-template-columns: 1fr;
+        list-style-type: none;
+    }
+    
+    nav{
+        grid-template-columns: 75% auto;
+    }
+}
