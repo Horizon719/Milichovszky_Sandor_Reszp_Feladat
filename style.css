@@ -24,6 +24,8 @@ nav ul{
 a{
     color: red;
     text-decoration: none;
+    display: block;
+    padding-top: 10px;
     font-size: 15px;
 }
 
